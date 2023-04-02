@@ -41,13 +41,13 @@ export const NavBar = () => {
             <Nav className="me-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}> Home </Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('scills')}> Skills </Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('project')}> Projects </Nav.Link>
+              <Nav.Link href="#projects" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}> Projects </Nav.Link>
             </Nav>
             <span className="navbar-text">
                 <div className="social-icon">
-                    <a href="#home"><img src={navIcon1} alt="" /></a>
-                    <a href="#home"><img src={navIcon2} alt="" /></a>
-                    <a href="#home"><img src={navIcon3} alt="" /></a>
+                    <a href="https://www.linkedin.com/in/iryna-shandar-0a7613219/"><img src={navIcon1} alt="linkedin" /></a>
+                    <a href="#home"><img src={navIcon2} alt="facebook" /></a>
+                    <a href="#home"><img src={navIcon3} alt="instagram" /></a>
                 </div>
                 <button className="vvd" onClick={() => console.log('connect')}> <span>Let's connect</span> </button>
             </span>

@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
+// import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = [ "html-coder", "FullStack developer", "Frontend developer"];
+    const toRotate = [ "coder", "Frontend developer"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -47,17 +49,22 @@ export const Banner = () => {
             <Container>
                 <Row className="align-item-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline"> Welcome to my Portfolio</span>
-                        <h1> {`Hi, I'm Iryna `} <span className="wrap"> {text} </span> </h1>
-                        <p> BLABLABLABLABLABLABLABLABLABLABLABLA </p>
-                        <button onClick={() => console.log('connect')} > Let's connect <ArrowRightCircle size={25}/> </button>
+                        <TrackVisibility>
+                        {({ isVisible }) =>  
+                        <div className={isVisible ? "animated__animated animate__bounce" : ""}>
+                            <span className="tagline"> Welcome to my Portfolio</span>
+                            <h1> {`Hi, I'm Iryna `} <span className="wrap"> {text} </span> </h1>
+                            <p> I have more than 1 year of experience in IT, and I have a great desire to try myself as Frontent developer. I am looking for a full-time job in a remote format. During full-stack course,
+                            I worked on personal and team projects (I was a developer and SCRUM-master). I have strong knowledge of HTML5 & CSS3 (SASS), JavaScript (React.js) and I worked with Responsive/Mobile Design. </p>
+                            <button onClick={() => console.log('connect')} > <a href="#connect"> Let's connect </a>  <ArrowRightCircle size={25}/> </button>
+                        </div> }
+                        </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5} >
                         <img src={headerImg} alt="Header Img"/>
                     </Col>
                 </Row>
             </Container>
-
         </section>
     )
 }
