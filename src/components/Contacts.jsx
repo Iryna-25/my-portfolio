@@ -47,7 +47,6 @@ export const Contacts = () => {
                 message: 'Something went wrong, please try again later.'
             })
         }
-
     }
 
     return (
