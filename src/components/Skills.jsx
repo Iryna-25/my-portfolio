@@ -1,9 +1,13 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import pic1 from "../assets/img/html-css-js.jpg";
+import pic2 from "../assets/img/react.png";
+import pic3 from "../assets/img/design.jpg";
+import pic4 from "../assets/img/netlify.png";
+import pic5 from "../assets/img/git.png";
+import pic6 from "../assets/img/browsers.jpg";
+import pic7 from "../assets/img/bugs.png";
 import colorSharp from "../assets/img/color-sharp.png";
 
 
@@ -34,40 +38,35 @@ export const Skills = () => {
                     <Col>
                         <div className="skill-bx">
                             <h2>Skills</h2>
-                            <p>bblablablalbalblbalablalblablalbalblablalbalblallalalalblabl</p>
+                            {/* <p>bblablablalbalblbalablalblablalbalblablalbalblallalalalblabl</p> */}
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    {/* <img src={meter1} alt="Meter1" /> */}
-                                    <h5>HTML5 & CSS3 (SASS)</h5>
-                                    <p>dhfjdslfhlds</p>
+                                    <h5>HTML5 & CSS3 & JS</h5>
+                                    <img src={pic1} alt="html-css-js"/>
                                 </div>
                                 <div className="item">
-                                    {/* <img src={meter2} alt="Meter2" /> */}
-                                    <h5>JavaScript (React.js)</h5>
+                                    <h5>React.js</h5>
+                                    <img src={pic2} alt="React"  />
                                 </div>
                                 <div className="item">
-                                    {/* <img src={meter3} alt="Meter3" /> */}
-                                    <h5>Responsive/Mobile Design</h5>
+                                    <h5>Responsive/Adaptive</h5>
+                                    <img src={pic3} alt="Design" />
                                 </div>
                                 <div className="item">
-                                    {/* <img src={meter1} alt="Meter1" /> */}
-                                    <h5>Content Management</h5>
-                                </div>
+                                    <h5>CMS/Netlify</h5>
+                                    <img src={pic4} alt="Netlify" />
+                                </div>                                
                                 <div className="item">
-                                    {/* <img src={meter1} alt="Meter1" /> */}
-                                    <h5>Systems (CMS)/Netlify</h5>
-                                </div>
+                                    <h5>VCS/Git</h5>
+                                    <img src={pic5} alt="Git" />
+                                </div>                                
                                 <div className="item">
-                                    {/* <img src={meter1} alt="Meter1" /> */}
-                                    <h5>Testing & Debugging</h5>
-                                </div>
-                                <div className="item">
-                                    {/* <img src={meter1} alt="Meter1" /> */}
                                     <h5>Cross-Browser Development</h5>
+                                    <img src={pic6} alt="Browsers" />
                                 </div>
                                 <div className="item">
-                                    {/* <img src={meter1} alt="Meter1" /> */}
-                                    <h5>Version Control/Git</h5>
+                                    <h5>Testing & Debugging</h5>
+                                    <img src={pic7} alt="Bugs" />
                                 </div>
                             </Carousel>
                         </div>

@@ -1,4 +1,4 @@
-/* *********** Custom Font ***********
+/************ Custom Font ***********
 @font-face {
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Bold.ttf');
@@ -312,6 +312,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 60px 50px;
   margin-top: -60px;
 }
+
+.skill-bx img {
+  border-radius: 50%;
+}
+
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -616,3 +621,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+/* .vvd {
+  color:#AA367C;
+} */
